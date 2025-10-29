@@ -1,0 +1,41 @@
+@use "sass:math";
+
+//==============function============
+@function toRem($px, $rem: 16) {
+  @return math.div($px, $rem) * 1rem;
+}
+@function toEm($px, $em: 16) {
+  @return math.div($px, $em) * 1em;
+}
+//===============================
+:root {
+  --lightOrange: #ffab08;
+  --orange: #ff7020;
+  --black: #000000;
+  --white: #f9f9f9;
+  --silver: #f2f2f3;
+  --hoverAddButton: #f86310;
+  --hover: #ffab08;
+}
+[class*="__container"] {
+  max-width: toRem(1320);
+  margin: 0 auto;
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+}
+body {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black);
+  background-color: var(--silver);
+}
+//=================================
+
+//==============================
+@import "reset";
+@import "font-icon";
+@import "page";
+//  @media (max-width: toEm(991.98))
+//     @media (max-width: toEm(767.98))
+//     @media (max-width: toEm(550))
