@@ -31,9 +31,9 @@
       <div class="menu__container">
         <nav class="menu__nav">
           <ul class="menu__list">
-            <li class="menu__item">
+            <li class="menu__item active">
               <img src="./images/menu/cheeseburger.svg" alt="icon product">
-              Бургеры
+              Бургери
             </li>
             <li class="menu__item">
               <img src="./images/menu/onion.svg" alt="icon product">
@@ -73,45 +73,177 @@
     </section>
     <section class="product">
       <div class="product__container">
-        <div class="product__title"></div>
         <div class="product__row">
           <div class="product__basket basket-product">
-            <div class="basket-product__title">Корзина
-              <span class="basket-product__count">1</span>
+            <div class="basket-product__top top-basket-product">
+              <div class="top-basket-product__title">Корзина</div>
+              <div class="top-basket-product__count">1</div>
+              <div class="top-basket-product__border"></div>
             </div>
             <div class="basket-product__body body-basket-product">
-              <div class="body-basket-product__products-wrapper product-basket">
-                <div class="product-basket__row">
-                  <div class="product-basket__image"><img src="./images/test.png" alt=""></div>
-                  <div class="product-basket__info info-product-basket">
-                    <div class="info-product-basket__title">Супер сырный</div>
-                    <div class="info-product-basket__weight">512г</div>
-                    <div class="info-product-basket__price">550грн</div>
-                  </div>
-                  <div class="product-basket__count count-product-basket">
-                    <div class="count-product-basket__minus">-</div>
-                    <div class="count-product-basket__text">3</div>
-                    <div class="count-product-basket__plus">+</div>
-                  </div>
+              <div class="body-basket-product__block">
+                <div class="body-basket-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="body-basket-product__info ">
+                  <div class="body-basket-product__info-title">Супер сырный</div>
+                  <div class="body-basket-product__info-weight">512г</div>
+                  <div class="body-basket-product__info-price">550грн</div>
+                </div>
+                <div class="body-basket-product__count">
+                  <div class="body-basket-product__count-minus">-</div>
+                  <div class="body-basket-product__count-text">3</div>
+                  <div class="body-basket-product__count-plus">+</div>
                 </div>
               </div>
-              <div class="body-basket-product__total-wrapper">
-                <span>Итого</span>
-                <span class="body-basket-product__total-sum">12грн</span>
+              <div class="body-basket-product__block">
+                <div class="body-basket-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="body-basket-product__info ">
+                  <div class="body-basket-product__info-title">Супер сырный</div>
+                  <div class="body-basket-product__info-weight">512г</div>
+                  <div class="body-basket-product__info-price">550грн</div>
+                </div>
+                <div class="body-basket-product__count">
+                  <div class="body-basket-product__count-minus">-</div>
+                  <div class="body-basket-product__count-text">3</div>
+                  <div class="body-basket-product__count-plus">+</div>
+                </div>
               </div>
-              <button class="body-basket-product__button">Оформить заказ</button>
-              <div class="body-basket-product__delivery-wrapper">
-                <img class="body-basket-product__delivery-icon" src="./images/icon-delivery.svg" alt="icon delivery">
-                <span class="body-basket-product__delivery-text">Бесплатная доставка</span>
+              <div class="body-basket-product__block">
+                <div class="body-basket-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="body-basket-product__info ">
+                  <div class="body-basket-product__info-title">Супер сырный</div>
+                  <div class="body-basket-product__info-weight">512г</div>
+                  <div class="body-basket-product__info-price">550грн</div>
+                </div>
+                <div class="body-basket-product__count">
+                  <div class="body-basket-product__count-minus">-</div>
+                  <div class="body-basket-product__count-text">3</div>
+                  <div class="body-basket-product__count-plus">+</div>
+                </div>
+              </div>
+              <div class="body-basket-product__block">
+                <div class="body-basket-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="body-basket-product__info ">
+                  <div class="body-basket-product__info-title">Супер сырный</div>
+                  <div class="body-basket-product__info-weight">512г</div>
+                  <div class="body-basket-product__info-price">550грн</div>
+                </div>
+                <div class="body-basket-product__count">
+                  <div class="body-basket-product__count-minus">-</div>
+                  <div class="body-basket-product__count-text">3</div>
+                  <div class="body-basket-product__count-plus">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-product__bottom bottom-basket-product">
+              <div class="bottom-basket-product__total">
+                <span class="bottom-basket-product__total-text">Итого</span>
+                <span class="bottom-basket-product__total-sum">1279грн</span>
+              </div>
+              <button class="bottom-basket-product__button">Оформить заказ</button>
+              <div class="bottom-basket-product__delivery">
+                <img class="bottom-basket-product__delivery-image" src="./images/icon-delivery.svg" alt="icon delivery">
+                <span class="bottom-basket-product__delivery-text">Бесплатная доставка</span>
               </div>
             </div>
           </div>
-          <div class="product__main"></div>
+          <div class="product__main main-product">
+            <h2 class="main-product__title">Бургери</h2>
+            <div class="main-product__row">
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба Lorem ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+              <div class="main-product__block block-main-product">
+                <div class="block-main-product__image"><img src="./images/test.png" alt=""></div>
+                <div class="block-main-product__price">689грн</div>
+                <div class="block-main-product__info">мясна бомба</div>
+                <div class="block-main-product__weight">520г</div>
+                <button class="block-main-product__button-add">Додати</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__row">
+        <div class="footer__logo _icon-main-logo">YourMeal</div>
+        <div class="footer__info info-footer">
+          <div class="info-footer__tell">
+            <div class="info-footer__tell-text">Номер для заказа</div>
+            <a href="#" class="info-footer__tell-link _icon-tell">+7(930)833-38-11</a>
+          </div>
+          <div class="info-footer__socials">
+            <div class="info-footer__socials-text">Ми в соцмережах</div>
+            <div class="info-footer__socials-wrapper-links">
+              <div class="info-footer__socials-vk _icon-vk"></div>
+              <div class="info-footer__socials-telegram _icon-telegram"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-title">© YouMeal, 2022</div>
+        <div class="footer__copyright-design">Design: Anastasia Ilina</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
