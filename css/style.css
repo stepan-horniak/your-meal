@@ -388,6 +388,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-column-gap: 1.875rem;
      -moz-column-gap: 1.875rem;
           column-gap: 1.875rem;
@@ -406,40 +407,134 @@ textarea {
   max-height: -moz-fit-content;
   max-height: fit-content;
   margin-top: 4.5rem;
+  min-height: 3rem;
 }
 @media (max-width: 61.99875em) {
   .product__basket {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    margin-top: 0;
+    margin-bottom: 1.875rem;
   }
 }
-.basket-product {
+@media (max-width: 34.375em) {
+  .product__basket {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+@media (max-width: 61.99875em) {
+  .basket-product {
+    min-height: 3rem;
+  }
+}
+.basket-product__wrapper {
   background-color: var(--white);
   padding: 1.5rem 1rem;
   border-radius: 1.125rem;
   overflow: hidden;
+  position: relative;
+  -webkit-transition: max-width 0.3s ease;
+  transition: max-width 0.3s ease;
 }
-@media (max-width: 47.99875em) {
-  .basket-product {
+@media (max-width: 61.99875em) {
+  .basket-product__wrapper {
     padding: 1rem 0.625rem;
+    cursor: pointer;
+    -webkit-transition: max-width 0.3s ease;
+    transition: max-width 0.3s ease;
+    margin-top: 0;
+    max-width: 11.25rem;
+  }
+  .basket-product__wrapper.active {
+    -webkit-transition: max-width 0.3s ease;
+    transition: max-width 0.3s ease;
+    max-width: 18.75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1607843137);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1607843137);
+  }
+}
+@media (max-width: 61.99875em) and (max-width: 34.375em) {
+  .basket-product__wrapper.active {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media (max-width: 34.375em) {
+  .basket-product__wrapper {
+    max-width: none;
   }
 }
 .basket-product__top {
   padding-bottom: 0.75rem;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .basket-product__top {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0rem;
   }
 }
+.basket-product__body {
+  -webkit-transition: opacity max-height 0.3s ease;
+  transition: opacity max-height 0.3s ease;
+}
+@media (max-width: 61.99875em) {
+  .basket-product__body {
+    max-height: 0;
+    opacity: 0;
+  }
+  .basket-product__body.active {
+    max-height: 6250rem;
+    opacity: 1;
+    -webkit-transition: opacity max-height 0.3s ease;
+    transition: opacity max-height 0.3s ease;
+  }
+}
+.basket-product__bottom {
+  -webkit-transition: opacity max-height 0.3s ease;
+  transition: opacity max-height 0.3s ease;
+}
+@media (max-width: 61.99875em) {
+  .basket-product__bottom {
+    max-height: 0;
+    opacity: 0;
+  }
+  .basket-product__bottom.active {
+    max-height: 6250rem;
+    opacity: 1;
+    -webkit-transition: opacity max-width 0.3s ease;
+    transition: opacity max-width 0.3s ease;
+  }
+}
+
 .top-basket-product {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+.top-basket-product__wrapper-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  width: 100%;
+  -webkit-column-gap: 0.75rem;
+     -moz-column-gap: 0.75rem;
+          column-gap: 0.75rem;
 }
 .top-basket-product__title {
   font-weight: 600;
@@ -486,6 +581,11 @@ textarea {
   width: auto;
   height: auto;
   background-color: inherit;
+}
+@media (max-width: 61.99875em) {
+  .top-basket-product__border {
+    display: none;
+  }
 }
 
 .body-basket-product__block {
@@ -669,6 +769,22 @@ textarea {
 }
 @media (max-width: 47.99875em) {
   .bottom-basket-product__delivery-text {
+    font-size: 0.625rem;
+  }
+}
+.bottom-basket-product__delivery-close {
+  display: none;
+}
+@media (max-width: 61.99875em) {
+  .bottom-basket-product__delivery-close {
+    display: block;
+    margin-left: auto;
+    color: var(--lightColor);
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .bottom-basket-product__delivery-close {
     font-size: 0.625rem;
   }
 }
