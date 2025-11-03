@@ -142,7 +142,6 @@ function windowLoaded() {
           </div>
           </div>
           `
-          console.log(rowElBasket)
           rowElBasket.insertAdjacentHTML("beforeend", createBasketBodyBottom)
           const infoTextBasked = document.querySelector(
             ".top-basket-product__border"
